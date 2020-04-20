@@ -11,3 +11,4 @@ Created a kubernetes cluster on Linux Academy servers, but behind the scene thes
 * [7-Bootstrapping-Kubernetes-Worker-Nodes](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/7-Bootstrapping-Kubernetes-Worker-Nodes)
 * [8-Configuring-Kubectl-to-Access-Remote-Cluster](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/8-Configuring-Kubectl-to-Access-Remote-Cluster)
 * [9-Setting-Up-Kubernetes-Networking-with-Weave-Net](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/9-Setting-Up-Kubernetes-Networking-with-Weave-Net)
+* [10-Deploying-kube-dns-in-Kubernetes-Cluster](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/10-Deploying-kube-dns-in-Kubernetes-Cluster)
