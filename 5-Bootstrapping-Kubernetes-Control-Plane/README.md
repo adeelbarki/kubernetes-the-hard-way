@@ -56,11 +56,7 @@ Verify if everything is working fine
 
 ## Output
 
-NAME.....................STATUS........MESSAGE..............ERROR  
-controller-manager.......Healthy.......ok.........  
-scheduler................Healthy.......ok  
-etcd-0...................Healthy.......{"health": "true"}  
-etcd-1...................Healthy.......{"health": "true"}  
+![componentstatuses](https://user-images.githubusercontent.com/22978850/79718344-44bc2200-82f5-11ea-8d64-45c5c9b80f16.png)
 
 
 ## Enable HTTP health checks
