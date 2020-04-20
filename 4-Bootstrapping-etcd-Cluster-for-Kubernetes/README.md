@@ -28,7 +28,8 @@ Kubernetes uses etcd to reliably store data in a distributed fashion. One of the
 `sudo systemctl start etcd`  
 
 * Verify that your etcd cluster is working like this  
-```sudo ETCDCTL_API=3 etcdctl member list \
+```
+sudo ETCDCTL_API=3 etcdctl member list \
   --endpoints=https://127.0.0.1:2379 \
   --cacert=/etc/etcd/ca.pem \
   --cert=/etc/etcd/kubernetes.pem \
