@@ -12,7 +12,7 @@ Kubernetes uses etcd to reliably store data in a distributed fashion. One of the
 `sudo mkdir -p /etc/etcd /var/lib/etcd`  
 `sudo cp ca.pem kubernetes-key.pem kubernetes.pem /etc/etcd/`  
 
-* Set the ETCD_NAME variable. Be sure to replace the placeholder in this command with controller-0 or controller-1, as appropriate for each server:__
+* Set the ETCD_NAME variable. Be sure to replace the placeholder in this command with controller-0 or controller-1, as appropriate for each server:  
 `ETCD_NAME=<controller-0 or controller-1>`  
 `INTERNAL_IP=$(curl http://169.254.169.254/latest/meta-data/local-ipv4)`  
 
@@ -20,7 +20,7 @@ Kubernetes uses etcd to reliably store data in a distributed fashion. One of the
 `CONTROLLER_0_INTERNAL_IP=<controller 0 private ip>`  
 `CONTROLLER_1_INTERNAL_IP=<controller 1 private ip>`  
 
-* Create the etcd systemd unit file by running file `create-etcd-systemd.sh`. Be sure to replace the placeholders in --name and --initial-cluster with real values
+* Create the etcd systemd unit file by running file `create-etcd-systemd.sh`. Be sure to replace the placeholders in --name and --initial-cluster with real values  
 
 * Start and enable the etcd service  
 `sudo systemctl daemon-reload`  
@@ -28,8 +28,9 @@ Kubernetes uses etcd to reliably store data in a distributed fashion. One of the
 `sudo systemctl start etcd`  
 
 * Verify that your etcd cluster is working like this  
-sudo ETCDCTL_API=3 etcdctl member list \
+```sudo ETCDCTL_API=3 etcdctl member list \
   --endpoints=https://127.0.0.1:2379 \
   --cacert=/etc/etcd/ca.pem \
   --cert=/etc/etcd/kubernetes.pem \
   --key=/etc/etcd/kubernetes-key.pem
+```

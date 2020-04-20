@@ -4,17 +4,17 @@ One way to manage access to the Kubernetes API across distributed control nodes 
 ## Install Nginx on the load balancer server
 Install nginx on server that is configured for load balancer
 
-`sudo apt-get install -y nginx`
-`sudo systemctl enable nginx`
-`sudo systemctl status nginx` (status check)
+`sudo apt-get install -y nginx`  
+`sudo systemctl enable nginx`  
+`sudo systemctl status nginx` (status check)  
 
 
 ## Configure Nginx to balance Kubernetes API traffic across the two controllers
 
-* Configure Nginx load-balancer
+* Configure Nginx load-balancer  
 `sudo mkdir -p /etc/nginx/tcpconf.d`
 
-* Open nginx.conf file
+* Open nginx.conf file  
 `sudo vi /etc/nginx/nginx.conf`
 
 * Add `include /etc/nginx/tcpconf.d/*;` this line at the end of nginx.conf and close vim by pressing Esc key and typing `:wq!`

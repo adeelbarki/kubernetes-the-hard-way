@@ -8,8 +8,9 @@ In this lab, we will configure worker nodes and create some worker nodes.
 [ipset: store multiple IP addresses or port numbers and match against the collection by iptables at one swoop, update iptables or express complex IP address]__
 
 ## Download and install binaries
-------------------------------------------------------------------
-* Download binaries__
+
+* Download binaries  
+```
 wget -q --show-progress --https-only --timestamping \
   https://github.com/kubernetes-incubator/cri-tools/releases/download/v1.0.0-beta.0/crictl-v1.0.0-beta.0-linux-amd64.tar.gz \
   https://storage.googleapis.com/kubernetes-the-hard-way/runsc \
@@ -19,9 +20,10 @@ wget -q --show-progress --https-only --timestamping \
   https://storage.googleapis.com/kubernetes-release/release/v1.10.2/bin/linux/amd64/kubectl \
   https://storage.googleapis.com/kubernetes-release/release/v1.10.2/bin/linux/amd64/kube-proxy \
   https://storage.googleapis.com/kubernetes-release/release/v1.10.2/bin/linux/amd64/kubelet
+```
 
-------------------------------------------------------------------
 * Create folders__
+```
 sudo mkdir -p \
   /etc/cni/net.d \
   /opt/cni/bin \
@@ -29,8 +31,8 @@ sudo mkdir -p \
   /var/lib/kube-proxy \
   /var/lib/kubernetes \
   /var/run/kubernetes
+```
 
-------------------------------------------------------------------
 * Change permission to executable:__
 `chmod +x kubectl kube-proxy kubelet runc.amd64 runsc`
 
@@ -91,11 +93,11 @@ sudo mkdir -p \
 `kubectl get nodes --kubeconfig /home/cloud_user/admin.kubeconfig`
 
 * Output on control node
------------------------------------------------------------------__
+```
 NAME                      STATUS     ROLES     AGE       VERSION<br />
 worker0.mylabserver.com   NotReady   <none>    1m        v1.10.2<br />
 worker1.mylabserver.com   NotReady   <none>    1m        v1.10.2<br />
------------------------------------------------------------------__
+```
 
 
 
