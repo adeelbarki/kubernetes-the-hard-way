@@ -1,10 +1,11 @@
 # Kubernetes the Hard way
-Created a kubernetes cluster on Linux Academy servers. Operating system used on all nodes is Ubuntu 18.04 and instance size is medium with 4GB memory and 2vCPUs. 
+Created a kubernetes cluster on Linux Academy servers, but behind the scene these are aws servers. Operating system used on all nodes is Ubuntu 18.04 and instance size is medium with 4GB memory and 2vCPUs. 
 
-[1-certificates](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/1-certificates)
-[2-kubeconfigs](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/2-kubeconfigs)
-[3-Data-Encryption-config](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/3-Data-Encryption-config)
-[4-Bootstrapping-etcd-Cluster-for-Kubernetes](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/4-Bootstrapping-etcd-Cluster-for-Kubernetes)
-[5-Bootstrapping-Kubernetes-Control-Plane](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/5-Bootstrapping-Kubernetes-Control-Plane)
-[6-frontend-loadbalancer](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/6-frontend-loadbalancer)
-[7-Bootstrapping-Kubernetes-Worker-Nodes](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/7-Bootstrapping-Kubernetes-Worker-Nodes)
+# Step by Step guide:
+* [1-certificates](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/1-certificates)
+* [2-kubeconfigs](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/2-kubeconfigs)
+* [3-Data-Encryption-config](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/3-Data-Encryption-config)
+* [4-Bootstrapping-etcd-Cluster-for-Kubernetes](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/* 4-Bootstrapping-etcd-Cluster-for-Kubernetes)
+* [5-Bootstrapping-Kubernetes-Control-Plane](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/5-Bootstrapping-Kubernetes-Control-Plane)
+* [6-frontend-loadbalancer](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/6-frontend-loadbalancer)
+* [7-Bootstrapping-Kubernetes-Worker-Nodes](https://github.com/adeelbarki/kubernetes-the-hard-way/tree/master/7-Bootstrapping-Kubernetes-Worker-Nodes)
